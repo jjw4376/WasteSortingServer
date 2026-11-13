@@ -1,8 +1,8 @@
 # 버림가이드 서버 (WasteSortingServer)
 
-[![CI](https://github.com/eovk01100-wq/WasteSortingServer/actions/workflows/ci.yml/badge.svg)](https://github.com/eovk01100-wq/WasteSortingServer/actions/workflows/ci.yml)
+[![CI](https://github.com/jjw4376/WasteSortingServer/actions/workflows/ci.yml/badge.svg)](https://github.com/jjw4376/WasteSortingServer/actions/workflows/ci.yml)
 
-Android 앱 **[버림가이드](https://github.com/eovk01100-wq/WasteSortingApp)** 의 백엔드입니다.
+Android 앱 **[버림가이드](https://github.com/jjw4376/WasteSortingApp)** 의 백엔드입니다.
 앱에 있던 Gemini 호출을 서버로 옮겨 **API 키를 휴대폰에서 없애고**, 분석 기록·계정·검색 캐시를 관리하며,
 온디바이스 YOLO가 틀린 사진을 모아 **사람이 검수한 뒤 재학습 데이터(YOLO 형식 ZIP)로 내보내는** 흐름을 담당합니다.
 
@@ -189,7 +189,7 @@ AI를 부르는 요청(분석·검색)은 토큰당 1분 20회·IP당 1분 60회
 필요한 것: Docker Desktop, JDK 17
 
 ```bash
-git clone https://github.com/eovk01100-wq/WasteSortingServer.git
+git clone https://github.com/jjw4376/WasteSortingServer.git
 cd WasteSortingServer
 cp .env.example .env      # .env를 열어 DB 비밀번호, GEMINI_API_KEY, JWT_SECRET(32자 이상) 입력
 docker compose up -d --build
